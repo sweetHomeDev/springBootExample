@@ -1,0 +1,992 @@
+2019-08-13 10:07:26.533  INFO 966 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Starting SpringRestApiSampleApplication on Fukui-MacBook-Pro.local with PID 966 (/Users/SoftBank/ys_eclipse/springREST_API_Mysql/target/classes started by SoftBank in /Users/SoftBank/ys_eclipse/springREST_API_Mysql)
+2019-08-13 10:07:26.541  INFO 966 --- [main] j.c.s.s.SpringRestApiSampleApplication   : No active profile set, falling back to default profiles: default
+2019-08-13 10:07:26.637  INFO 966 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20f5281c: startup date [Tue Aug 13 10:07:26 JST 2019]; root of context hierarchy
+2019-08-13 10:07:27.910  INFO 966 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9d52a798] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 10:07:28.352  INFO 966 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 48083 (http)
+2019-08-13 10:07:28.376  INFO 966 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-13 10:07:28.385  INFO 966 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-08-13 10:07:28.392  INFO 966 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/SoftBank/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-13 10:07:28.514  INFO 966 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-13 10:07:28.514  INFO 966 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1877 ms
+2019-08-13 10:07:28.617  INFO 966 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-08-13 10:07:28.621  INFO 966 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-13 10:07:28.622  INFO 966 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-13 10:07:28.622  INFO 966 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-13 10:07:28.622  INFO 966 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-13 10:07:28.622  INFO 966 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loggingFilter' to: [/*]
+2019-08-13 10:07:28.843  INFO 966 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-13 10:07:29.169  INFO 966 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-13 10:07:29.226  INFO 966 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:07:29.241  INFO 966 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-08-13 10:07:29.346  INFO 966 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.4.Final}
+2019-08-13 10:07:29.489  INFO 966 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-08-13 10:07:29.663  INFO 966 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-13 10:07:30.358  INFO 966 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-08-13 10:07:30.362  INFO 966 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:07:31.015  WARN 966 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-13 10:07:31.094  INFO 966 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/devices/logs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.acsCheck(java.lang.String,jp.co.sb.sample.bean.Payload1Json) throws com.fasterxml.jackson.core.JsonProcessingException
+2019-08-13 10:07:31.095  INFO 966 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/healthcheck],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.healthCheck(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:07:31.099  INFO 966 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-13 10:07:31.100  INFO 966 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-13 10:07:31.101  INFO 966 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-13 10:07:31.106  INFO 966 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:07:31.107  INFO 966 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-13 10:07:31.289  INFO 966 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-13 10:07:31.391  INFO 966 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:07:31.625  INFO 966 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20f5281c: startup date [Tue Aug 13 10:07:26 JST 2019]; root of context hierarchy
+2019-08-13 10:07:31.688  INFO 966 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:07:31.689  INFO 966 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:07:32.084  INFO 966 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-13 10:07:32.086  INFO 966 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-13 10:07:32.095  INFO 966 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-08-13 10:07:32.100  INFO 966 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-08-13 10:07:32.100  INFO 966 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-08-13 10:07:32.117  INFO 966 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 5 custom documentation plugin(s)
+2019-08-13 10:07:32.149  INFO 966 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:07:32.167  INFO 966 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:07:32.246  INFO 966 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:07:32.251  INFO 966 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:07:32.255  INFO 966 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:07:32.304  INFO 966 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 48083 (http) with context path ''
+2019-08-13 10:07:32.313  INFO 966 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Started SpringRestApiSampleApplication in 26.124 seconds (JVM running for 32.248)
+2019-08-13 10:07:47.254  INFO 966 --- [http-nio-48083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-13 10:07:47.254  INFO 966 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-13 10:07:47.314  INFO 966 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 59 ms
+2019-08-13 10:08:02.574  INFO 966 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : START ACS API
+2019-08-13 10:08:02.963  INFO 966 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request servletpath:/location-latestcell/v1/devices/logs
+2019-08-13 10:08:17.358  INFO 966 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request AccessKey:AAAAAA
+2019-08-13 10:08:19.531  INFO 966 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request body:{
+  "payload1": {
+		"msn": "01234567890"
+	}
+}
+2019-08-13 10:08:27.302  INFO 966 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : START /location-latestcell/v1/devices/logs
+2019-08-13 10:09:01.796 ERROR 966 --- [http-nio-48083-exec-1] j.c.s.s.s.SpringRestApiSampleService     : HTTP通信でエラーが発生しました。java.io.FileNotFoundException: ./acs.properties (No such file or directory)
+2019-08-13 10:09:13.469  INFO 966 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : END /location-latestcell/v1/devices/logs
+2019-08-13 10:09:43.918  INFO 966 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : END ACS API. Processing time 102398
+2019-08-13 10:11:22.300  INFO 966 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : START ACS API
+2019-08-13 10:11:22.300  INFO 966 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : request servletpath:/location-latestcell/v1/devices/logs
+2019-08-13 10:11:22.300  INFO 966 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : request AccessKey:null
+2019-08-13 10:11:22.301  INFO 966 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : request body:{
+  "payload1": {
+		"msn": "01234567890"
+	}
+}
+2019-08-13 10:11:23.929  INFO 966 --- [http-nio-48083-exec-2] j.c.s.s.c.SpringRestApiSampleController  : START /location-latestcell/v1/devices/logs
+2019-08-13 10:11:28.364 ERROR 966 --- [http-nio-48083-exec-2] j.c.s.s.s.SpringRestApiSampleService     : AccessKey値が設定されてないです。
+2019-08-13 10:11:29.926  INFO 966 --- [http-nio-48083-exec-2] j.c.s.s.c.SpringRestApiSampleController  : END /location-latestcell/v1/devices/logs
+2019-08-13 10:11:37.096  INFO 966 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : END ACS API. Processing time 14796
+2019-08-13 10:16:04.713  INFO 966 --- [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-13 10:16:04.714  INFO 966 --- [RMI TCP Connection(19)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20f5281c: startup date [Tue Aug 13 10:07:26 JST 2019]; root of context hierarchy
+2019-08-13 10:16:04.722  INFO 966 --- [RMI TCP Connection(19)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-08-13 10:16:04.724  INFO 966 --- [RMI TCP Connection(19)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-08-13 10:16:04.725  INFO 966 --- [RMI TCP Connection(19)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-08-13 10:16:04.728  INFO 966 --- [RMI TCP Connection(19)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:16:04.729  INFO 966 --- [RMI TCP Connection(19)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-13 10:16:04.740  INFO 966 --- [RMI TCP Connection(19)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-13 10:17:23.952  INFO 991 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Starting SpringRestApiSampleApplication on Fukui-MacBook-Pro.local with PID 991 (/Users/SoftBank/ys_eclipse/springREST_API_Mysql/target/classes started by SoftBank in /Users/SoftBank/ys_eclipse/springREST_API_Mysql)
+2019-08-13 10:17:23.956  INFO 991 --- [main] j.c.s.s.SpringRestApiSampleApplication   : No active profile set, falling back to default profiles: default
+2019-08-13 10:17:24.041  INFO 991 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@74a6f9c1: startup date [Tue Aug 13 10:17:24 JST 2019]; root of context hierarchy
+2019-08-13 10:17:25.176  INFO 991 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c62529d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 10:17:25.602  INFO 991 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 48083 (http)
+2019-08-13 10:17:25.623  INFO 991 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-13 10:17:25.624  INFO 991 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-08-13 10:17:25.629  INFO 991 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/SoftBank/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-13 10:17:25.746  INFO 991 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-13 10:17:25.746  INFO 991 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1705 ms
+2019-08-13 10:17:25.852  INFO 991 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-08-13 10:17:25.856  INFO 991 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-13 10:17:25.857  INFO 991 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-13 10:17:25.857  INFO 991 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-13 10:17:25.857  INFO 991 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-13 10:17:25.857  INFO 991 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loggingFilter' to: [/*]
+2019-08-13 10:17:26.035  INFO 991 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-13 10:17:26.337  INFO 991 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-13 10:17:26.384  INFO 991 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:17:26.397  INFO 991 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-08-13 10:17:26.498  INFO 991 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.4.Final}
+2019-08-13 10:17:26.635  INFO 991 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-08-13 10:17:26.775  INFO 991 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-13 10:17:27.414  INFO 991 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-08-13 10:17:27.416  INFO 991 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:17:28.048  WARN 991 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-13 10:17:28.129  INFO 991 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/devices/logs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.acsCheck(java.lang.String,jp.co.sb.sample.bean.Payload1Json) throws com.fasterxml.jackson.core.JsonProcessingException
+2019-08-13 10:17:28.130  INFO 991 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/healthcheck],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.healthCheck(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:17:28.133  INFO 991 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-13 10:17:28.134  INFO 991 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-13 10:17:28.135  INFO 991 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-13 10:17:28.138  INFO 991 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:17:28.139  INFO 991 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-13 10:17:28.312  INFO 991 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-13 10:17:28.417  INFO 991 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:17:28.645  INFO 991 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@74a6f9c1: startup date [Tue Aug 13 10:17:24 JST 2019]; root of context hierarchy
+2019-08-13 10:17:28.707  INFO 991 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:17:28.707  INFO 991 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:17:29.099  INFO 991 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-13 10:17:29.101  INFO 991 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-13 10:17:29.109  INFO 991 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-08-13 10:17:29.114  INFO 991 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-08-13 10:17:29.114  INFO 991 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-08-13 10:17:29.132  INFO 991 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 5 custom documentation plugin(s)
+2019-08-13 10:17:29.166  INFO 991 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:17:29.183  INFO 991 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:17:29.257  INFO 991 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:17:29.262  INFO 991 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:17:29.267  INFO 991 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:17:29.317  INFO 991 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 48083 (http) with context path ''
+2019-08-13 10:17:29.325  INFO 991 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Started SpringRestApiSampleApplication in 25.657 seconds (JVM running for 31.518)
+2019-08-13 10:17:40.260  INFO 991 --- [http-nio-48083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-13 10:17:40.260  INFO 991 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-13 10:17:40.286  INFO 991 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2019-08-13 10:17:45.599  INFO 991 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : START ACS API.
+2019-08-13 10:17:45.861  INFO 991 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request servletpath:/location-latestcell/v1/devices/logs
+2019-08-13 10:17:46.174  INFO 991 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:null
+2019-08-13 10:17:46.441  INFO 991 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request body:{
+  "payload1": {
+		"msn": "01234567890"
+	}
+}
+2019-08-13 10:17:51.414  INFO 991 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : START /location-latestcell/v1/devices/logs
+2019-08-13 10:17:53.453 ERROR 991 --- [http-nio-48083-exec-1] j.c.s.s.s.SpringRestApiSampleService     : AccessKey値が設定されてないです。
+2019-08-13 10:17:53.463  INFO 991 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : END /location-latestcell/v1/devices/logs
+2019-08-13 10:17:54.505  INFO 991 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : END ACS API. Processing time 1970/01/01 09:00:08.392
+2019-08-13 10:20:45.135  INFO 991 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-13 10:20:45.135  INFO 991 --- [RMI TCP Connection(13)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@74a6f9c1: startup date [Tue Aug 13 10:17:24 JST 2019]; root of context hierarchy
+2019-08-13 10:20:45.143  INFO 991 --- [RMI TCP Connection(13)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-08-13 10:20:45.147  INFO 991 --- [RMI TCP Connection(13)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-08-13 10:20:45.148  INFO 991 --- [RMI TCP Connection(13)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-08-13 10:20:45.151  INFO 991 --- [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:20:45.152  INFO 991 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-13 10:20:45.161  INFO 991 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-13 10:21:21.356  INFO 999 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Starting SpringRestApiSampleApplication on Fukui-MacBook-Pro.local with PID 999 (/Users/SoftBank/ys_eclipse/springREST_API_Mysql/target/classes started by SoftBank in /Users/SoftBank/ys_eclipse/springREST_API_Mysql)
+2019-08-13 10:21:21.360  INFO 999 --- [main] j.c.s.s.SpringRestApiSampleApplication   : No active profile set, falling back to default profiles: default
+2019-08-13 10:21:21.431  INFO 999 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@708f5957: startup date [Tue Aug 13 10:21:21 JST 2019]; root of context hierarchy
+2019-08-13 10:21:22.411  INFO 999 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c0357f07] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 10:21:22.776  INFO 999 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 48083 (http)
+2019-08-13 10:21:22.796  INFO 999 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-13 10:21:22.796  INFO 999 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-08-13 10:21:22.800  INFO 999 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/SoftBank/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-13 10:21:22.902  INFO 999 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-13 10:21:22.902  INFO 999 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1471 ms
+2019-08-13 10:21:22.968  INFO 999 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-08-13 10:21:22.972  INFO 999 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-13 10:21:22.972  INFO 999 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-13 10:21:22.973  INFO 999 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-13 10:21:22.973  INFO 999 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-13 10:21:22.973  INFO 999 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loggingFilter' to: [/*]
+2019-08-13 10:21:23.116  INFO 999 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-13 10:21:23.300  INFO 999 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-13 10:21:23.441  INFO 999 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:21:23.457  INFO 999 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-08-13 10:21:23.517  INFO 999 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.4.Final}
+2019-08-13 10:21:23.625  INFO 999 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-08-13 10:21:23.748  INFO 999 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-13 10:21:24.278  INFO 999 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-08-13 10:21:24.281  INFO 999 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:21:24.786  WARN 999 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-13 10:21:24.848  INFO 999 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/devices/logs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.acsCheck(java.lang.String,jp.co.sb.sample.bean.Payload1Json) throws com.fasterxml.jackson.core.JsonProcessingException
+2019-08-13 10:21:24.850  INFO 999 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/healthcheck],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.healthCheck(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:21:24.853  INFO 999 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-13 10:21:24.854  INFO 999 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-13 10:21:24.855  INFO 999 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-13 10:21:24.859  INFO 999 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:21:24.859  INFO 999 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-13 10:21:25.000  INFO 999 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-13 10:21:25.076  INFO 999 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:21:25.259  INFO 999 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@708f5957: startup date [Tue Aug 13 10:21:21 JST 2019]; root of context hierarchy
+2019-08-13 10:21:25.308  INFO 999 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:21:25.308  INFO 999 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:21:25.609  INFO 999 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-13 10:21:25.611  INFO 999 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-13 10:21:25.618  INFO 999 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-08-13 10:21:25.623  INFO 999 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-08-13 10:21:25.624  INFO 999 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-08-13 10:21:25.637  INFO 999 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 5 custom documentation plugin(s)
+2019-08-13 10:21:25.659  INFO 999 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:21:25.674  INFO 999 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:21:25.734  INFO 999 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:21:25.738  INFO 999 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:21:25.742  INFO 999 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:21:25.784  INFO 999 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 48083 (http) with context path ''
+2019-08-13 10:21:25.788  INFO 999 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Started SpringRestApiSampleApplication in 24.677 seconds (JVM running for 30.295)
+2019-08-13 10:21:38.276  INFO 999 --- [http-nio-48083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-13 10:21:38.277  INFO 999 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-13 10:21:38.298  INFO 999 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2019-08-13 10:21:38.313  INFO 999 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : START ACS API.
+2019-08-13 10:21:38.314  INFO 999 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request servletpath:/location-latestcell/v1/devices/logs
+2019-08-13 10:21:38.314  INFO 999 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:null
+2019-08-13 10:21:38.314  INFO 999 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request body:{
+  "payload1": {
+		"msn": "01234567890"
+	}
+}
+2019-08-13 10:21:38.456  INFO 999 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : START /location-latestcell/v1/devices/logs
+2019-08-13 10:21:38.463 ERROR 999 --- [http-nio-48083-exec-1] j.c.s.s.s.SpringRestApiSampleService     : AccessKey値が設定されてないです。
+2019-08-13 10:21:38.466  INFO 999 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : END /location-latestcell/v1/devices/logs
+2019-08-13 10:22:03.627  INFO 999 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : START ACS API.
+2019-08-13 10:22:03.627  INFO 999 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : request servletpath:/location-latestcell/v1/devices/logs
+2019-08-13 10:22:03.627  INFO 999 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:AAAAAA
+2019-08-13 10:22:03.627  INFO 999 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : request body:{
+  "payload1": {
+		"msn": "01234567890"
+	}
+}
+2019-08-13 10:22:03.631  INFO 999 --- [http-nio-48083-exec-2] j.c.s.s.c.SpringRestApiSampleController  : START /location-latestcell/v1/devices/logs
+2019-08-13 10:22:03.770 ERROR 999 --- [http-nio-48083-exec-2] j.c.s.s.s.SpringRestApiSampleService     : HTTP通信でエラーが発生しました。java.io.FileNotFoundException: ./acs.properties (No such file or directory)
+2019-08-13 10:22:03.770  INFO 999 --- [http-nio-48083-exec-2] j.c.s.s.c.SpringRestApiSampleController  : END /location-latestcell/v1/devices/logs
+2019-08-13 10:22:47.359  INFO 999 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-13 10:22:47.360  INFO 999 --- [RMI TCP Connection(11)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@708f5957: startup date [Tue Aug 13 10:21:21 JST 2019]; root of context hierarchy
+2019-08-13 10:22:47.364  INFO 999 --- [RMI TCP Connection(11)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-08-13 10:22:47.366  INFO 999 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-08-13 10:22:47.367  INFO 999 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-08-13 10:22:47.371  INFO 999 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:22:47.373  INFO 999 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-13 10:22:47.384  INFO 999 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-13 10:23:26.112  INFO 1000 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Starting SpringRestApiSampleApplication on Fukui-MacBook-Pro.local with PID 1000 (/Users/SoftBank/ys_eclipse/springREST_API_Mysql/target/classes started by SoftBank in /Users/SoftBank/ys_eclipse/springREST_API_Mysql)
+2019-08-13 10:23:26.116  INFO 1000 --- [main] j.c.s.s.SpringRestApiSampleApplication   : No active profile set, falling back to default profiles: default
+2019-08-13 10:23:26.201  INFO 1000 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3af0a9da: startup date [Tue Aug 13 10:23:26 JST 2019]; root of context hierarchy
+2019-08-13 10:23:27.322  INFO 1000 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$316e73ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 10:23:27.732  INFO 1000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 48083 (http)
+2019-08-13 10:23:27.756  INFO 1000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-13 10:23:27.756  INFO 1000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-08-13 10:23:27.762  INFO 1000 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/SoftBank/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-13 10:23:27.873  INFO 1000 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-13 10:23:27.873  INFO 1000 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1672 ms
+2019-08-13 10:23:27.974  INFO 1000 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-08-13 10:23:27.979  INFO 1000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-13 10:23:27.980  INFO 1000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-13 10:23:27.980  INFO 1000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-13 10:23:27.980  INFO 1000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-13 10:23:27.981  INFO 1000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loggingFilter' to: [/*]
+2019-08-13 10:23:28.155  INFO 1000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-13 10:23:28.457  INFO 1000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-13 10:23:28.508  INFO 1000 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:23:28.522  INFO 1000 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-08-13 10:23:28.619  INFO 1000 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.4.Final}
+2019-08-13 10:23:28.754  INFO 1000 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-08-13 10:23:28.895  INFO 1000 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-13 10:23:29.538  INFO 1000 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-08-13 10:23:29.542  INFO 1000 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:23:30.188  WARN 1000 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-13 10:23:30.267  INFO 1000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/devices/logs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.acsCheck(java.lang.String,jp.co.sb.sample.bean.Payload1Json) throws com.fasterxml.jackson.core.JsonProcessingException
+2019-08-13 10:23:30.269  INFO 1000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/healthcheck],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.healthCheck(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:23:30.272  INFO 1000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-13 10:23:30.274  INFO 1000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-13 10:23:30.275  INFO 1000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-13 10:23:30.278  INFO 1000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:23:30.279  INFO 1000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-13 10:23:30.453  INFO 1000 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-13 10:23:30.554  INFO 1000 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:23:30.802  INFO 1000 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3af0a9da: startup date [Tue Aug 13 10:23:26 JST 2019]; root of context hierarchy
+2019-08-13 10:23:30.873  INFO 1000 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:23:30.874  INFO 1000 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:23:31.313  INFO 1000 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-13 10:23:31.315  INFO 1000 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-13 10:23:31.323  INFO 1000 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-08-13 10:23:31.328  INFO 1000 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-08-13 10:23:31.328  INFO 1000 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-08-13 10:23:31.348  INFO 1000 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 5 custom documentation plugin(s)
+2019-08-13 10:23:31.379  INFO 1000 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:23:31.397  INFO 1000 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:23:31.478  INFO 1000 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:23:31.483  INFO 1000 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:23:31.489  INFO 1000 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:23:31.540  INFO 1000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 48083 (http) with context path ''
+2019-08-13 10:23:31.548  INFO 1000 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Started SpringRestApiSampleApplication in 25.704 seconds (JVM running for 31.507)
+2019-08-13 10:23:34.705  INFO 1000 --- [http-nio-48083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-13 10:23:34.706  INFO 1000 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-13 10:23:34.735  INFO 1000 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2019-08-13 10:23:38.812  INFO 1000 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : START ACS API.
+2019-08-13 10:23:38.813  INFO 1000 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request servletpath:/location-latestcell/v1/devices/logs
+2019-08-13 10:23:38.813  INFO 1000 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:AAAAAA
+2019-08-13 10:23:38.813  INFO 1000 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request body:{
+  "payload1": {
+		"msn": "01234567890"
+	}
+}
+2019-08-13 10:23:39.662  INFO 1000 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : START /location-latestcell/v1/devices/logs
+2019-08-13 10:23:45.480 ERROR 1000 --- [http-nio-48083-exec-1] j.c.s.s.s.SpringRestApiSampleService     : HTTP通信でエラーが発生しました。java.io.FileNotFoundException: ./acs.properties (No such file or directory)
+2019-08-13 10:23:45.484  INFO 1000 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : END /location-latestcell/v1/devices/logs
+2019-08-13 10:25:02.432  INFO 1000 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-13 10:25:02.433  INFO 1000 --- [RMI TCP Connection(11)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3af0a9da: startup date [Tue Aug 13 10:23:26 JST 2019]; root of context hierarchy
+2019-08-13 10:25:02.440  INFO 1000 --- [RMI TCP Connection(11)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-08-13 10:25:02.442  INFO 1000 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-08-13 10:25:02.443  INFO 1000 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-08-13 10:25:02.449  INFO 1000 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:25:02.451  INFO 1000 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-13 10:25:02.464  INFO 1000 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-13 10:27:15.100  INFO 1012 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Starting SpringRestApiSampleApplication on Fukui-MacBook-Pro.local with PID 1012 (/Users/SoftBank/ys_eclipse/springREST_API_Mysql/target/classes started by SoftBank in /Users/SoftBank/ys_eclipse/springREST_API_Mysql)
+2019-08-13 10:27:15.105  INFO 1012 --- [main] j.c.s.s.SpringRestApiSampleApplication   : No active profile set, falling back to default profiles: default
+2019-08-13 10:27:15.199  INFO 1012 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45a37759: startup date [Tue Aug 13 10:27:15 JST 2019]; root of context hierarchy
+2019-08-13 10:27:16.386  INFO 1012 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$967f0914] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 10:27:16.822  INFO 1012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 48083 (http)
+2019-08-13 10:27:16.846  INFO 1012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-13 10:27:16.846  INFO 1012 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-08-13 10:27:16.851  INFO 1012 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/SoftBank/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-13 10:27:16.970  INFO 1012 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-13 10:27:16.971  INFO 1012 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1772 ms
+2019-08-13 10:27:17.096  INFO 1012 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-08-13 10:27:17.100  INFO 1012 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-13 10:27:17.101  INFO 1012 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-13 10:27:17.101  INFO 1012 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-13 10:27:17.101  INFO 1012 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-13 10:27:17.101  INFO 1012 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loggingFilter' to: [/*]
+2019-08-13 10:27:17.317  INFO 1012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-13 10:27:17.629  INFO 1012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-13 10:27:17.679  INFO 1012 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:27:17.694  INFO 1012 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-08-13 10:27:17.820  INFO 1012 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.4.Final}
+2019-08-13 10:27:18.011  INFO 1012 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-08-13 10:27:18.181  INFO 1012 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-13 10:27:18.916  INFO 1012 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-08-13 10:27:18.919  INFO 1012 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:27:19.886  WARN 1012 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-13 10:27:19.967  INFO 1012 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/devices/logs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.acsCheck(java.lang.String,jp.co.sb.sample.bean.Payload1Json) throws com.fasterxml.jackson.core.JsonProcessingException
+2019-08-13 10:27:19.969  INFO 1012 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/healthcheck],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.healthCheck(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:27:19.972  INFO 1012 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-13 10:27:19.974  INFO 1012 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-13 10:27:19.976  INFO 1012 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-13 10:27:19.979  INFO 1012 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:27:19.980  INFO 1012 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-13 10:27:20.170  INFO 1012 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-13 10:27:20.269  INFO 1012 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:27:20.516  INFO 1012 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45a37759: startup date [Tue Aug 13 10:27:15 JST 2019]; root of context hierarchy
+2019-08-13 10:27:20.580  INFO 1012 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:27:20.581  INFO 1012 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:27:21.000  INFO 1012 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-13 10:27:21.003  INFO 1012 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-13 10:27:21.012  INFO 1012 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-08-13 10:27:21.017  INFO 1012 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-08-13 10:27:21.017  INFO 1012 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-08-13 10:27:21.037  INFO 1012 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 5 custom documentation plugin(s)
+2019-08-13 10:27:21.072  INFO 1012 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:27:21.091  INFO 1012 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:27:21.176  INFO 1012 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:27:21.181  INFO 1012 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:27:21.187  INFO 1012 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:27:21.251  INFO 1012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 48083 (http) with context path ''
+2019-08-13 10:27:21.257  INFO 1012 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Started SpringRestApiSampleApplication in 26.622 seconds (JVM running for 32.786)
+2019-08-13 10:27:22.241  INFO 1012 --- [http-nio-48083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-13 10:27:22.242  INFO 1012 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-13 10:27:22.269  INFO 1012 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2019-08-13 10:27:28.269  INFO 1012 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : START ACS API.
+2019-08-13 10:27:28.269  INFO 1012 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request servletpath:/location-latestcell/v1/devices/logs
+2019-08-13 10:27:28.269  INFO 1012 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:AAAAAA
+2019-08-13 10:27:28.269  INFO 1012 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request body:{
+  "payload1": {
+		"msn": "01234567890"
+	}
+}
+2019-08-13 10:27:29.404  INFO 1012 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : START /location-latestcell/v1/devices/logs
+2019-08-13 10:27:33.655 ERROR 1012 --- [http-nio-48083-exec-1] j.c.s.s.s.SpringRestApiSampleService     : HTTP通信でエラーが発生しました。java.io.FileNotFoundException: ./acs.properties (No such file or directory)
+2019-08-13 10:27:33.661  INFO 1012 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : END /location-latestcell/v1/devices/logs
+2019-08-13 10:27:54.491  INFO 1012 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : START ACS API.
+2019-08-13 10:27:54.491  INFO 1012 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : request servletpath:/location-latestcell/v1/devices/logs
+2019-08-13 10:27:54.491  INFO 1012 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:AAAAAA
+2019-08-13 10:27:54.491  INFO 1012 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : request body:{
+  "payload1": {
+		"msn": "01234567890"
+	}
+}
+2019-08-13 10:27:56.068  INFO 1012 --- [http-nio-48083-exec-2] j.c.s.s.c.SpringRestApiSampleController  : START /location-latestcell/v1/devices/logs
+2019-08-13 10:27:58.289 ERROR 1012 --- [http-nio-48083-exec-2] j.c.s.s.s.SpringRestApiSampleService     : HTTP通信でエラーが発生しました。java.io.FileNotFoundException: ./acs.properties (No such file or directory)
+2019-08-13 10:27:58.290  INFO 1012 --- [http-nio-48083-exec-2] j.c.s.s.c.SpringRestApiSampleController  : END /location-latestcell/v1/devices/logs
+2019-08-13 10:29:39.464  INFO 1012 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-13 10:29:39.464  INFO 1012 --- [RMI TCP Connection(11)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45a37759: startup date [Tue Aug 13 10:27:15 JST 2019]; root of context hierarchy
+2019-08-13 10:29:39.470  INFO 1012 --- [RMI TCP Connection(11)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-08-13 10:29:39.472  INFO 1012 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-08-13 10:29:39.473  INFO 1012 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-08-13 10:29:39.477  INFO 1012 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:29:39.479  INFO 1012 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-13 10:29:39.497  INFO 1012 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-13 10:31:30.541  INFO 1039 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Starting SpringRestApiSampleApplication on Fukui-MacBook-Pro.local with PID 1039 (/Users/SoftBank/ys_eclipse/springREST_API_Mysql/target/classes started by SoftBank in /Users/SoftBank/ys_eclipse/springREST_API_Mysql)
+2019-08-13 10:31:30.547  INFO 1039 --- [main] j.c.s.s.SpringRestApiSampleApplication   : No active profile set, falling back to default profiles: default
+2019-08-13 10:31:30.623  INFO 1039 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@27ce24aa: startup date [Tue Aug 13 10:31:30 JST 2019]; root of context hierarchy
+2019-08-13 10:31:31.646  INFO 1039 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9d992d3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 10:31:31.997  INFO 1039 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 48083 (http)
+2019-08-13 10:31:32.017  INFO 1039 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-13 10:31:32.018  INFO 1039 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-08-13 10:31:32.022  INFO 1039 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/SoftBank/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-13 10:31:32.121  INFO 1039 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-13 10:31:32.122  INFO 1039 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1499 ms
+2019-08-13 10:31:32.185  INFO 1039 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-08-13 10:31:32.190  INFO 1039 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-13 10:31:32.191  INFO 1039 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-13 10:31:32.192  INFO 1039 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-13 10:31:32.192  INFO 1039 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-13 10:31:32.192  INFO 1039 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loggingFilter' to: [/*]
+2019-08-13 10:31:32.330  INFO 1039 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-13 10:31:32.523  INFO 1039 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-13 10:31:32.654  INFO 1039 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:31:32.671  INFO 1039 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-08-13 10:31:32.733  INFO 1039 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.4.Final}
+2019-08-13 10:31:32.844  INFO 1039 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-08-13 10:31:32.977  INFO 1039 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-13 10:31:33.516  INFO 1039 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-08-13 10:31:33.518  INFO 1039 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:31:34.030  WARN 1039 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-13 10:31:34.093  INFO 1039 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/devices/logs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.acsCheck(java.lang.String,jp.co.sb.sample.bean.Payload1Json) throws com.fasterxml.jackson.core.JsonProcessingException
+2019-08-13 10:31:34.094  INFO 1039 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/healthcheck],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.healthCheck(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:31:34.097  INFO 1039 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-13 10:31:34.098  INFO 1039 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-13 10:31:34.098  INFO 1039 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-13 10:31:34.103  INFO 1039 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:31:34.104  INFO 1039 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-13 10:31:34.244  INFO 1039 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-13 10:31:34.317  INFO 1039 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:31:34.509  INFO 1039 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@27ce24aa: startup date [Tue Aug 13 10:31:30 JST 2019]; root of context hierarchy
+2019-08-13 10:31:34.561  INFO 1039 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:31:34.562  INFO 1039 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:31:34.857  INFO 1039 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-13 10:31:34.859  INFO 1039 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-13 10:31:34.865  INFO 1039 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-08-13 10:31:34.869  INFO 1039 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-08-13 10:31:34.869  INFO 1039 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-08-13 10:31:34.882  INFO 1039 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 5 custom documentation plugin(s)
+2019-08-13 10:31:34.903  INFO 1039 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:31:34.917  INFO 1039 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:31:34.987  INFO 1039 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:31:34.990  INFO 1039 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:31:34.994  INFO 1039 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:31:35.033  INFO 1039 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 48083 (http) with context path ''
+2019-08-13 10:31:35.037  INFO 1039 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Started SpringRestApiSampleApplication in 24.731 seconds (JVM running for 30.447)
+2019-08-13 10:31:39.556  INFO 1039 --- [http-nio-48083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-13 10:31:39.556  INFO 1039 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-13 10:31:39.580  INFO 1039 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2019-08-13 10:31:39.591  INFO 1039 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : START ACS API.
+2019-08-13 10:31:39.591  INFO 1039 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request servletpath:/location-latestcell/v1/devices/logs
+2019-08-13 10:31:39.592  INFO 1039 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:AAAAAA
+2019-08-13 10:31:39.592  INFO 1039 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request body:{
+  "payload1": {
+		"msn": "01234567890"
+	}
+}
+2019-08-13 10:31:39.735  INFO 1039 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : START /location-latestcell/v1/devices/logs
+2019-08-13 10:31:39.827 ERROR 1039 --- [http-nio-48083-exec-1] j.c.s.s.s.SpringRestApiSampleService     : HTTP通信でエラーが発生しました。java.io.FileNotFoundException: ./acs.properties (No such file or directory)
+2019-08-13 10:31:39.831  INFO 1039 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : END /location-latestcell/v1/devices/logs
+2019-08-13 10:31:39.846  INFO 1039 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : END ACS API. Processing time 09:00:00.258
+2019-08-13 10:33:21.478  INFO 1039 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-13 10:33:21.478  INFO 1039 --- [RMI TCP Connection(11)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@27ce24aa: startup date [Tue Aug 13 10:31:30 JST 2019]; root of context hierarchy
+2019-08-13 10:33:21.482  INFO 1039 --- [RMI TCP Connection(11)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-08-13 10:33:21.483  INFO 1039 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-08-13 10:33:21.484  INFO 1039 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-08-13 10:33:21.489  INFO 1039 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:33:21.490  INFO 1039 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-13 10:33:21.498  INFO 1039 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-13 10:33:57.166  INFO 1041 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Starting SpringRestApiSampleApplication on Fukui-MacBook-Pro.local with PID 1041 (/Users/SoftBank/ys_eclipse/springREST_API_Mysql/target/classes started by SoftBank in /Users/SoftBank/ys_eclipse/springREST_API_Mysql)
+2019-08-13 10:33:57.170  INFO 1041 --- [main] j.c.s.s.SpringRestApiSampleApplication   : No active profile set, falling back to default profiles: default
+2019-08-13 10:33:57.258  INFO 1041 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c214cc0: startup date [Tue Aug 13 10:33:57 JST 2019]; root of context hierarchy
+2019-08-13 10:33:58.413  INFO 1041 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9fbe819d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 10:33:58.839  INFO 1041 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 48083 (http)
+2019-08-13 10:33:58.862  INFO 1041 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-13 10:33:58.863  INFO 1041 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-08-13 10:33:58.868  INFO 1041 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/SoftBank/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-13 10:33:58.988  INFO 1041 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-13 10:33:58.989  INFO 1041 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1731 ms
+2019-08-13 10:33:59.104  INFO 1041 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-08-13 10:33:59.108  INFO 1041 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-13 10:33:59.108  INFO 1041 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-13 10:33:59.109  INFO 1041 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-13 10:33:59.109  INFO 1041 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-13 10:33:59.109  INFO 1041 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loggingFilter' to: [/*]
+2019-08-13 10:33:59.320  INFO 1041 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-13 10:33:59.638  INFO 1041 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-13 10:33:59.693  INFO 1041 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:33:59.708  INFO 1041 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-08-13 10:33:59.807  INFO 1041 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.4.Final}
+2019-08-13 10:33:59.945  INFO 1041 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-08-13 10:34:00.091  INFO 1041 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-13 10:34:00.731  INFO 1041 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-08-13 10:34:00.734  INFO 1041 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:34:01.383  WARN 1041 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-13 10:34:01.461  INFO 1041 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/devices/logs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.acsCheck(java.lang.String,jp.co.sb.sample.bean.Payload1Json) throws com.fasterxml.jackson.core.JsonProcessingException
+2019-08-13 10:34:01.462  INFO 1041 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/healthcheck],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.healthCheck(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:34:01.466  INFO 1041 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-13 10:34:01.467  INFO 1041 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-13 10:34:01.468  INFO 1041 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-13 10:34:01.471  INFO 1041 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:34:01.472  INFO 1041 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-13 10:34:01.653  INFO 1041 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-13 10:34:01.752  INFO 1041 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:34:01.980  INFO 1041 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c214cc0: startup date [Tue Aug 13 10:33:57 JST 2019]; root of context hierarchy
+2019-08-13 10:34:02.076  INFO 1041 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:34:02.076  INFO 1041 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:34:02.438  INFO 1041 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-13 10:34:02.441  INFO 1041 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-13 10:34:02.449  INFO 1041 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-08-13 10:34:02.454  INFO 1041 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-08-13 10:34:02.454  INFO 1041 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-08-13 10:34:02.471  INFO 1041 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 5 custom documentation plugin(s)
+2019-08-13 10:34:02.501  INFO 1041 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:34:02.519  INFO 1041 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:34:02.588  INFO 1041 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:34:02.593  INFO 1041 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:34:02.598  INFO 1041 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:34:02.653  INFO 1041 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 48083 (http) with context path ''
+2019-08-13 10:34:02.660  INFO 1041 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Started SpringRestApiSampleApplication in 25.851 seconds (JVM running for 31.71)
+2019-08-13 10:34:14.671  INFO 1041 --- [http-nio-48083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-13 10:34:14.672  INFO 1041 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-13 10:34:14.700  INFO 1041 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2019-08-13 10:34:17.464  INFO 1041 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : START ACS API.
+2019-08-13 10:34:17.464  INFO 1041 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request servletpath:/location-latestcell/v1/devices/logs
+2019-08-13 10:34:17.464  INFO 1041 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:AAAAAA
+2019-08-13 10:34:17.465  INFO 1041 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request body:{
+  "payload1": {
+		"msn": "01234567890"
+	}
+}
+2019-08-13 10:41:52.613  INFO 1041 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-13 10:41:52.613  INFO 1041 --- [RMI TCP Connection(11)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c214cc0: startup date [Tue Aug 13 10:33:57 JST 2019]; root of context hierarchy
+2019-08-13 10:41:52.619  INFO 1041 --- [RMI TCP Connection(11)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-08-13 10:41:52.621  INFO 1041 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-08-13 10:41:52.622  INFO 1041 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-08-13 10:41:52.625  INFO 1041 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:41:52.631  INFO 1041 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-13 10:41:52.642  INFO 1041 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-13 10:42:42.889  INFO 1053 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Starting SpringRestApiSampleApplication on Fukui-MacBook-Pro.local with PID 1053 (/Users/SoftBank/ys_eclipse/springREST_API_Mysql/target/classes started by SoftBank in /Users/SoftBank/ys_eclipse/springREST_API_Mysql)
+2019-08-13 10:42:42.892  INFO 1053 --- [main] j.c.s.s.SpringRestApiSampleApplication   : No active profile set, falling back to default profiles: default
+2019-08-13 10:42:42.973  INFO 1053 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@647e447: startup date [Tue Aug 13 10:42:42 JST 2019]; root of context hierarchy
+2019-08-13 10:42:43.947  INFO 1053 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9d992d3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 10:42:44.307  INFO 1053 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 48083 (http)
+2019-08-13 10:42:44.328  INFO 1053 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-13 10:42:44.328  INFO 1053 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-08-13 10:42:44.332  INFO 1053 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/SoftBank/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-13 10:42:44.435  INFO 1053 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-13 10:42:44.436  INFO 1053 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1463 ms
+2019-08-13 10:42:44.496  INFO 1053 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-08-13 10:42:44.502  INFO 1053 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-13 10:42:44.503  INFO 1053 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-13 10:42:44.503  INFO 1053 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-13 10:42:44.503  INFO 1053 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-13 10:42:44.503  INFO 1053 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loggingFilter' to: [/*]
+2019-08-13 10:42:44.641  INFO 1053 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-13 10:42:44.829  INFO 1053 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-13 10:42:44.973  INFO 1053 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:42:44.993  INFO 1053 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-08-13 10:42:45.052  INFO 1053 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.4.Final}
+2019-08-13 10:42:45.156  INFO 1053 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-08-13 10:42:45.301  INFO 1053 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-13 10:42:45.833  INFO 1053 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-08-13 10:42:45.838  INFO 1053 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:42:46.343  WARN 1053 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-13 10:42:46.404  INFO 1053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/devices/logs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.acsCheck(java.lang.String,jp.co.sb.sample.bean.Payload1Json) throws com.fasterxml.jackson.core.JsonProcessingException
+2019-08-13 10:42:46.405  INFO 1053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/healthcheck],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.healthCheck(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:42:46.410  INFO 1053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-13 10:42:46.413  INFO 1053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-13 10:42:46.414  INFO 1053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-13 10:42:46.417  INFO 1053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:42:46.418  INFO 1053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-13 10:42:46.554  INFO 1053 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-13 10:42:46.635  INFO 1053 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:42:46.816  INFO 1053 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@647e447: startup date [Tue Aug 13 10:42:42 JST 2019]; root of context hierarchy
+2019-08-13 10:42:46.864  INFO 1053 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:42:46.865  INFO 1053 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:42:47.165  INFO 1053 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-13 10:42:47.168  INFO 1053 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-13 10:42:47.174  INFO 1053 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-08-13 10:42:47.178  INFO 1053 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-08-13 10:42:47.179  INFO 1053 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-08-13 10:42:47.193  INFO 1053 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 5 custom documentation plugin(s)
+2019-08-13 10:42:47.215  INFO 1053 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:42:47.229  INFO 1053 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:42:47.299  INFO 1053 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:42:47.302  INFO 1053 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:42:47.305  INFO 1053 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:42:47.344  INFO 1053 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 48083 (http) with context path ''
+2019-08-13 10:42:47.349  INFO 1053 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Started SpringRestApiSampleApplication in 24.706 seconds (JVM running for 30.397)
+2019-08-13 10:43:40.818  INFO 1053 --- [http-nio-48083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-13 10:43:40.819  INFO 1053 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-13 10:43:40.843  INFO 1053 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2019-08-13 10:43:40.857  INFO 1053 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : START ACS API.
+2019-08-13 10:43:40.858  INFO 1053 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request servletpath:/location-latestcell/v1/devices/logs
+2019-08-13 10:43:40.858  INFO 1053 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:AAAAAA
+2019-08-13 10:43:40.858  INFO 1053 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request body:{
+  "payload1": {
+		"msn": "01234567890"
+	}
+}
+2019-08-13 10:43:40.994  INFO 1053 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : START /location-latestcell/v1/devices/logs
+2019-08-13 10:43:41.085 ERROR 1053 --- [http-nio-48083-exec-1] j.c.s.s.s.SpringRestApiSampleService     : HTTP通信でエラーが発生しました。java.io.FileNotFoundException: ./acs.properties (No such file or directory)
+2019-08-13 10:43:41.089  INFO 1053 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : END /location-latestcell/v1/devices/logs
+2019-08-13 10:43:41.103  INFO 1053 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : END ACS API. Processing time 16:19:397
+2019-08-13 10:54:07.819  INFO 1053 --- [RMI TCP Connection(22)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-13 10:54:07.819  INFO 1053 --- [RMI TCP Connection(22)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@647e447: startup date [Tue Aug 13 10:42:42 JST 2019]; root of context hierarchy
+2019-08-13 10:54:07.822  INFO 1053 --- [RMI TCP Connection(22)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-08-13 10:54:07.824  INFO 1053 --- [RMI TCP Connection(22)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-08-13 10:54:07.824  INFO 1053 --- [RMI TCP Connection(22)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-08-13 10:54:07.827  INFO 1053 --- [RMI TCP Connection(22)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:54:07.828  INFO 1053 --- [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-13 10:54:07.836  INFO 1053 --- [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-13 10:54:51.204  INFO 1067 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Starting SpringRestApiSampleApplication on Fukui-MacBook-Pro.local with PID 1067 (/Users/SoftBank/ys_eclipse/springREST_API_Mysql/target/classes started by SoftBank in /Users/SoftBank/ys_eclipse/springREST_API_Mysql)
+2019-08-13 10:54:51.208  INFO 1067 --- [main] j.c.s.s.SpringRestApiSampleApplication   : No active profile set, falling back to default profiles: default
+2019-08-13 10:54:51.289  INFO 1067 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c33b74f: startup date [Tue Aug 13 10:54:51 JST 2019]; root of context hierarchy
+2019-08-13 10:54:52.263  INFO 1067 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6633461e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 10:54:52.608  INFO 1067 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 48083 (http)
+2019-08-13 10:54:52.628  INFO 1067 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-13 10:54:52.628  INFO 1067 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-08-13 10:54:52.633  INFO 1067 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/SoftBank/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-13 10:54:52.737  INFO 1067 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-13 10:54:52.738  INFO 1067 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1449 ms
+2019-08-13 10:54:52.805  INFO 1067 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-08-13 10:54:52.810  INFO 1067 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-13 10:54:52.813  INFO 1067 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-13 10:54:52.813  INFO 1067 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-13 10:54:52.813  INFO 1067 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-13 10:54:52.813  INFO 1067 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loggingFilter' to: [/*]
+2019-08-13 10:54:52.954  INFO 1067 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-13 10:54:53.151  INFO 1067 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-13 10:54:53.282  INFO 1067 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:54:53.301  INFO 1067 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-08-13 10:54:53.357  INFO 1067 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.4.Final}
+2019-08-13 10:54:53.459  INFO 1067 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-08-13 10:54:53.573  INFO 1067 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-13 10:54:54.095  INFO 1067 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-08-13 10:54:54.097  INFO 1067 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:54:54.595  WARN 1067 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-13 10:54:54.654  INFO 1067 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/devices/logs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.acsCheck(java.lang.String,jp.co.sb.sample.bean.Payload1Json) throws com.fasterxml.jackson.core.JsonProcessingException
+2019-08-13 10:54:54.655  INFO 1067 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/healthcheck],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.healthCheck(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:54:54.660  INFO 1067 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-13 10:54:54.661  INFO 1067 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-13 10:54:54.663  INFO 1067 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-13 10:54:54.668  INFO 1067 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:54:54.669  INFO 1067 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-13 10:54:54.801  INFO 1067 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-13 10:54:54.890  INFO 1067 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:54:55.071  INFO 1067 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c33b74f: startup date [Tue Aug 13 10:54:51 JST 2019]; root of context hierarchy
+2019-08-13 10:54:55.119  INFO 1067 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:54:55.120  INFO 1067 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:54:55.421  INFO 1067 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-13 10:54:55.424  INFO 1067 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-13 10:54:55.434  INFO 1067 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-08-13 10:54:55.440  INFO 1067 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-08-13 10:54:55.440  INFO 1067 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-08-13 10:54:55.461  INFO 1067 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 5 custom documentation plugin(s)
+2019-08-13 10:54:55.493  INFO 1067 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:54:55.506  INFO 1067 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:54:55.563  INFO 1067 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:54:55.568  INFO 1067 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:54:55.572  INFO 1067 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:54:55.614  INFO 1067 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 48083 (http) with context path ''
+2019-08-13 10:54:55.617  INFO 1067 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Started SpringRestApiSampleApplication in 24.676 seconds (JVM running for 30.505)
+2019-08-13 10:55:12.546  INFO 1067 --- [http-nio-48083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-13 10:55:12.546  INFO 1067 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-13 10:55:12.568  INFO 1067 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2019-08-13 10:55:12.584  INFO 1067 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : START ACS API.
+2019-08-13 10:55:12.584  INFO 1067 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request servletpath:/location-latestcell/v1/devices/logs
+2019-08-13 10:55:12.584  INFO 1067 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:AAAAAA
+2019-08-13 10:55:12.585  INFO 1067 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request body:{
+  "payload1": {
+		"msn": "01234567890"
+	}
+}
+2019-08-13 10:55:12.726  INFO 1067 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : START /location-latestcell/v1/devices/logs
+2019-08-13 10:55:12.818 ERROR 1067 --- [http-nio-48083-exec-1] j.c.s.s.s.SpringRestApiSampleService     : HTTP通信でエラーが発生しました。java.io.FileNotFoundException: ./acs.properties (No such file or directory)
+2019-08-13 10:55:12.822  INFO 1067 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : END /location-latestcell/v1/devices/logs
+2019-08-13 10:55:12.838  INFO 1067 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : END ACS API. Processing time 00:00:257
+2019-08-13 10:56:09.990  INFO 1067 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-13 10:56:09.990  INFO 1067 --- [RMI TCP Connection(10)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c33b74f: startup date [Tue Aug 13 10:54:51 JST 2019]; root of context hierarchy
+2019-08-13 10:56:09.994  INFO 1067 --- [RMI TCP Connection(10)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-08-13 10:56:09.995  INFO 1067 --- [RMI TCP Connection(10)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-08-13 10:56:09.996  INFO 1067 --- [RMI TCP Connection(10)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-08-13 10:56:10.002  INFO 1067 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:56:10.004  INFO 1067 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-13 10:56:10.011  INFO 1067 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-13 10:56:45.271  INFO 1070 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Starting SpringRestApiSampleApplication on Fukui-MacBook-Pro.local with PID 1070 (/Users/SoftBank/ys_eclipse/springREST_API_Mysql/target/classes started by SoftBank in /Users/SoftBank/ys_eclipse/springREST_API_Mysql)
+2019-08-13 10:56:45.275  INFO 1070 --- [main] j.c.s.s.SpringRestApiSampleApplication   : No active profile set, falling back to default profiles: default
+2019-08-13 10:56:45.354  INFO 1070 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7722c3c3: startup date [Tue Aug 13 10:56:45 JST 2019]; root of context hierarchy
+2019-08-13 10:56:46.348  INFO 1070 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5e927de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 10:56:46.684  INFO 1070 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 48083 (http)
+2019-08-13 10:56:46.704  INFO 1070 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-13 10:56:46.705  INFO 1070 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-08-13 10:56:46.709  INFO 1070 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/SoftBank/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-13 10:56:46.810  INFO 1070 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-13 10:56:46.810  INFO 1070 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1456 ms
+2019-08-13 10:56:46.872  INFO 1070 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-08-13 10:56:46.876  INFO 1070 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-13 10:56:46.876  INFO 1070 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-13 10:56:46.877  INFO 1070 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-13 10:56:46.877  INFO 1070 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-13 10:56:46.877  INFO 1070 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loggingFilter' to: [/*]
+2019-08-13 10:56:47.017  INFO 1070 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-13 10:56:47.197  INFO 1070 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-13 10:56:47.334  INFO 1070 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:56:47.350  INFO 1070 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-08-13 10:56:47.412  INFO 1070 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.4.Final}
+2019-08-13 10:56:47.520  INFO 1070 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-08-13 10:56:47.638  INFO 1070 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-13 10:56:48.155  INFO 1070 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-08-13 10:56:48.157  INFO 1070 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:56:48.666  WARN 1070 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-13 10:56:48.730  INFO 1070 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/devices/logs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.acsCheck(java.lang.String,jp.co.sb.sample.bean.Payload1Json) throws com.fasterxml.jackson.core.JsonProcessingException
+2019-08-13 10:56:48.732  INFO 1070 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/healthcheck],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.healthCheck(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:56:48.737  INFO 1070 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-13 10:56:48.738  INFO 1070 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-13 10:56:48.739  INFO 1070 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-13 10:56:48.743  INFO 1070 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-13 10:56:48.744  INFO 1070 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-13 10:56:48.884  INFO 1070 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-13 10:56:48.962  INFO 1070 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:56:49.147  INFO 1070 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7722c3c3: startup date [Tue Aug 13 10:56:45 JST 2019]; root of context hierarchy
+2019-08-13 10:56:49.196  INFO 1070 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:56:49.196  INFO 1070 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 10:56:49.509  INFO 1070 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-13 10:56:49.512  INFO 1070 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-13 10:56:49.518  INFO 1070 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-08-13 10:56:49.522  INFO 1070 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-08-13 10:56:49.523  INFO 1070 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-08-13 10:56:49.539  INFO 1070 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 5 custom documentation plugin(s)
+2019-08-13 10:56:49.562  INFO 1070 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:56:49.577  INFO 1070 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:56:49.645  INFO 1070 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:56:49.648  INFO 1070 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:56:49.654  INFO 1070 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 10:56:49.693  INFO 1070 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 48083 (http) with context path ''
+2019-08-13 10:56:49.697  INFO 1070 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Started SpringRestApiSampleApplication in 24.665 seconds (JVM running for 30.328)
+2019-08-13 10:57:14.778  INFO 1070 --- [http-nio-48083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-13 10:57:14.778  INFO 1070 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-13 10:57:14.804  INFO 1070 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2019-08-13 10:57:14.818  INFO 1070 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : START ACS API.
+2019-08-13 10:57:14.818  INFO 1070 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request servletpath:/location-latestcell/v1/devices/logs
+2019-08-13 10:57:14.818  INFO 1070 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:AAAAAA
+2019-08-13 10:57:14.818  INFO 1070 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request body:{
+  "payload1": {
+		"msn": "01234567890"
+	}
+}
+2019-08-13 10:57:14.955  INFO 1070 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : START /location-latestcell/v1/devices/logs
+2019-08-13 10:57:15.047 ERROR 1070 --- [http-nio-48083-exec-1] j.c.s.s.s.SpringRestApiSampleService     : HTTP通信でエラーが発生しました。java.io.FileNotFoundException: ./acs.properties (No such file or directory)
+2019-08-13 10:57:15.051  INFO 1070 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : END /location-latestcell/v1/devices/logs
+2019-08-13 10:57:15.073  INFO 1070 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : END ACS API. Processing time 00:00:00.253
+2019-08-13 10:57:43.451  INFO 1070 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-13 10:57:43.451  INFO 1070 --- [RMI TCP Connection(11)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7722c3c3: startup date [Tue Aug 13 10:56:45 JST 2019]; root of context hierarchy
+2019-08-13 10:57:43.455  INFO 1070 --- [RMI TCP Connection(11)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-08-13 10:57:43.457  INFO 1070 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-08-13 10:57:43.458  INFO 1070 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-08-13 10:57:43.461  INFO 1070 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 10:57:43.463  INFO 1070 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-13 10:57:43.469  INFO 1070 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-13 11:15:49.509  INFO 1093 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Starting SpringRestApiSampleApplication on Fukui-MacBook-Pro.local with PID 1093 (/Users/SoftBank/ys_eclipse/springREST_API_Mysql/target/classes started by SoftBank in /Users/SoftBank/ys_eclipse/springREST_API_Mysql)
+2019-08-13 11:15:49.512  INFO 1093 --- [main] j.c.s.s.SpringRestApiSampleApplication   : No active profile set, falling back to default profiles: default
+2019-08-13 11:15:49.590  INFO 1093 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68999068: startup date [Tue Aug 13 11:15:49 JST 2019]; root of context hierarchy
+2019-08-13 11:15:50.585  INFO 1093 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$70f6097b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 11:15:50.944  INFO 1093 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 48083 (http)
+2019-08-13 11:15:50.965  INFO 1093 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-13 11:15:50.965  INFO 1093 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-08-13 11:15:50.970  INFO 1093 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/SoftBank/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-13 11:15:51.077  INFO 1093 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-13 11:15:51.078  INFO 1093 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1488 ms
+2019-08-13 11:15:51.139  INFO 1093 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-08-13 11:15:51.144  INFO 1093 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-13 11:15:51.145  INFO 1093 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-13 11:15:51.145  INFO 1093 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-13 11:15:51.145  INFO 1093 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-13 11:15:51.145  INFO 1093 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loggingFilter' to: [/*]
+2019-08-13 11:15:51.281  INFO 1093 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-13 11:15:51.460  INFO 1093 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-13 11:15:51.593  INFO 1093 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-13 11:15:51.613  INFO 1093 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-08-13 11:15:51.671  INFO 1093 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.4.Final}
+2019-08-13 11:15:51.786  INFO 1093 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-08-13 11:15:51.917  INFO 1093 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-13 11:15:52.461  INFO 1093 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-08-13 11:15:52.464  INFO 1093 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 11:15:52.987  WARN 1093 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-13 11:15:53.049  INFO 1093 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/devices/logs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.sample(java.lang.String,jp.co.sb.sample.bean.Payload1Json) throws com.fasterxml.jackson.core.JsonProcessingException
+2019-08-13 11:15:53.051  INFO 1093 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/healthcheck],methods=[GET || POST]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.healthCheck()
+2019-08-13 11:15:53.055  INFO 1093 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-13 11:15:53.056  INFO 1093 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-13 11:15:53.057  INFO 1093 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-13 11:15:53.061  INFO 1093 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-13 11:15:53.062  INFO 1093 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-13 11:15:53.200  INFO 1093 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-13 11:15:53.282  INFO 1093 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 11:15:53.474  INFO 1093 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68999068: startup date [Tue Aug 13 11:15:49 JST 2019]; root of context hierarchy
+2019-08-13 11:15:53.522  INFO 1093 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 11:15:53.522  INFO 1093 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 11:15:53.825  INFO 1093 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-13 11:15:53.827  INFO 1093 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-13 11:15:53.834  INFO 1093 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-08-13 11:15:53.838  INFO 1093 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-08-13 11:15:53.838  INFO 1093 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-08-13 11:15:53.851  INFO 1093 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 5 custom documentation plugin(s)
+2019-08-13 11:15:53.871  INFO 1093 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 11:15:53.885  INFO 1093 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 11:15:53.953  INFO 1093 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 11:15:53.955  INFO 1093 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 11:15:53.960  INFO 1093 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 11:15:53.999  INFO 1093 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 48083 (http) with context path ''
+2019-08-13 11:15:54.003  INFO 1093 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Started SpringRestApiSampleApplication in 24.734 seconds (JVM running for 30.461)
+2019-08-13 11:16:13.174  INFO 1093 --- [http-nio-48083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-13 11:16:13.175  INFO 1093 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-13 11:16:13.202  INFO 1093 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2019-08-13 11:16:13.219  INFO 1093 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : START ACS_API.
+2019-08-13 11:16:13.219  INFO 1093 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request URI:/location-latestcell/v1/devices/logs
+2019-08-13 11:16:13.219  INFO 1093 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:AAAAAA
+2019-08-13 11:16:13.219  INFO 1093 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request body:{
+  "payload1": {
+		"msn": "01234567890"
+	}
+}
+2019-08-13 11:16:13.395  INFO 1093 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : 	START /location-latestcell/v1/devices/logs
+2019-08-13 11:16:13.519 ERROR 1093 --- [http-nio-48083-exec-1] j.c.s.s.s.SpringRestApiSampleService     : HTTP通信でエラーが発生しました。java.io.FileNotFoundException: ./acs.properties (No such file or directory)
+2019-08-13 11:16:13.523  INFO 1093 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : 	END /location-latestcell/v1/devices/logs
+2019-08-13 11:16:13.547  INFO 1093 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : END ACS_API. Processing time 00:00.324
+2019-08-13 11:16:35.586  INFO 1093 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : START ACS_API.
+2019-08-13 11:16:35.586  INFO 1093 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : request URI:/location-latestcell/v1/devices/logs
+2019-08-13 11:16:35.587  INFO 1093 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:AAAAAA
+2019-08-13 11:16:35.587  INFO 1093 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : request body:{"payload1": {"msn": "01234567890"}}
+2019-08-13 11:16:35.590  INFO 1093 --- [http-nio-48083-exec-2] j.c.s.s.c.SpringRestApiSampleController  : 	START /location-latestcell/v1/devices/logs
+2019-08-13 11:16:35.595 ERROR 1093 --- [http-nio-48083-exec-2] j.c.s.s.s.SpringRestApiSampleService     : HTTP通信でエラーが発生しました。java.io.FileNotFoundException: ./acs.properties (No such file or directory)
+2019-08-13 11:16:35.595  INFO 1093 --- [http-nio-48083-exec-2] j.c.s.s.c.SpringRestApiSampleController  : 	END /location-latestcell/v1/devices/logs
+2019-08-13 11:16:35.598  INFO 1093 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : END ACS_API. Processing time 00:00.013
+2019-08-13 11:17:21.983  INFO 1093 --- [http-nio-48083-exec-3] jp.co.sb.sample.filter.LoggingFilter     : START ACS_API.
+2019-08-13 11:17:21.983  INFO 1093 --- [http-nio-48083-exec-3] jp.co.sb.sample.filter.LoggingFilter     : request URI:/health
+2019-08-13 11:17:21.983  INFO 1093 --- [http-nio-48083-exec-3] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:AAAAAA
+2019-08-13 11:17:21.983  INFO 1093 --- [http-nio-48083-exec-3] jp.co.sb.sample.filter.LoggingFilter     : request body:{"payload1": {"msn": "01234567890"}}
+2019-08-13 11:17:21.990  INFO 1093 --- [http-nio-48083-exec-3] jp.co.sb.sample.filter.LoggingFilter     : END ACS_API. Processing time 00:00.007
+2019-08-13 11:17:43.701  INFO 1093 --- [http-nio-48083-exec-4] jp.co.sb.sample.filter.LoggingFilter     : START ACS_API.
+2019-08-13 11:17:43.702  INFO 1093 --- [http-nio-48083-exec-4] jp.co.sb.sample.filter.LoggingFilter     : request URI:/location-latestcell/v1/healthcheck
+2019-08-13 11:17:43.702  INFO 1093 --- [http-nio-48083-exec-4] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:AAAAAA
+2019-08-13 11:17:43.702  INFO 1093 --- [http-nio-48083-exec-4] jp.co.sb.sample.filter.LoggingFilter     : request body:{"payload1": {"msn": "01234567890"}}
+2019-08-13 11:17:43.705  INFO 1093 --- [http-nio-48083-exec-4] j.c.s.s.c.SpringRestApiSampleController  : 	START /healthcheck
+2019-08-13 11:17:43.705  INFO 1093 --- [http-nio-48083-exec-4] j.c.s.s.c.SpringRestApiSampleController  : 	END /healthcheck
+2019-08-13 11:17:43.709  INFO 1093 --- [http-nio-48083-exec-4] jp.co.sb.sample.filter.LoggingFilter     : END ACS_API. Processing time 00:00.008
+2019-08-13 11:17:59.449  INFO 1093 --- [http-nio-48083-exec-5] jp.co.sb.sample.filter.LoggingFilter     : START ACS_API.
+2019-08-13 11:17:59.449  INFO 1093 --- [http-nio-48083-exec-5] jp.co.sb.sample.filter.LoggingFilter     : request URI:/location-latestcell/v1/devices/logs
+2019-08-13 11:17:59.449  INFO 1093 --- [http-nio-48083-exec-5] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:AAAAAA
+2019-08-13 11:17:59.449  INFO 1093 --- [http-nio-48083-exec-5] jp.co.sb.sample.filter.LoggingFilter     : request body:{"payload1": {"msn": "01234567890"}}
+2019-08-13 11:17:59.452  INFO 1093 --- [http-nio-48083-exec-5] j.c.s.s.c.SpringRestApiSampleController  : 	START /location-latestcell/v1/devices/logs
+2019-08-13 11:17:59.456 ERROR 1093 --- [http-nio-48083-exec-5] j.c.s.s.s.SpringRestApiSampleService     : HTTP通信でエラーが発生しました。java.io.FileNotFoundException: ./acs.properties (No such file or directory)
+2019-08-13 11:17:59.456  INFO 1093 --- [http-nio-48083-exec-5] j.c.s.s.c.SpringRestApiSampleController  : 	END /location-latestcell/v1/devices/logs
+2019-08-13 11:17:59.458  INFO 1093 --- [http-nio-48083-exec-5] jp.co.sb.sample.filter.LoggingFilter     : END ACS_API. Processing time 00:00.009
+2019-08-13 11:20:03.106  INFO 1093 --- [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-13 11:20:03.107  INFO 1093 --- [RMI TCP Connection(15)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68999068: startup date [Tue Aug 13 11:15:49 JST 2019]; root of context hierarchy
+2019-08-13 11:20:03.111  INFO 1093 --- [RMI TCP Connection(15)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-08-13 11:20:03.112  INFO 1093 --- [RMI TCP Connection(15)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-08-13 11:20:03.113  INFO 1093 --- [RMI TCP Connection(15)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-08-13 11:20:03.116  INFO 1093 --- [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 11:20:03.118  INFO 1093 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-13 11:20:03.130  INFO 1093 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-13 13:43:20.355  INFO 1277 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Starting SpringRestApiSampleApplication on Fukui-MacBook-Pro.local with PID 1277 (/Users/SoftBank/ys_eclipse/springREST_API_Mysql/target/classes started by SoftBank in /Users/SoftBank/ys_eclipse/springREST_API_Mysql)
+2019-08-13 13:43:20.359  INFO 1277 --- [main] j.c.s.s.SpringRestApiSampleApplication   : No active profile set, falling back to default profiles: default
+2019-08-13 13:43:20.445  INFO 1277 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20c0a64d: startup date [Tue Aug 13 13:43:20 JST 2019]; root of context hierarchy
+2019-08-13 13:43:21.565  INFO 1277 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5dc7247c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 13:43:21.990  INFO 1277 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 48083 (http)
+2019-08-13 13:43:22.012  INFO 1277 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-13 13:43:22.012  INFO 1277 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-08-13 13:43:22.017  INFO 1277 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/SoftBank/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-13 13:43:22.127  INFO 1277 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-13 13:43:22.128  INFO 1277 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1683 ms
+2019-08-13 13:43:22.210  INFO 1277 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-08-13 13:43:22.215  INFO 1277 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-13 13:43:22.215  INFO 1277 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-13 13:43:22.215  INFO 1277 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-13 13:43:22.215  INFO 1277 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-13 13:43:22.216  INFO 1277 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loggingFilter' to: [/*]
+2019-08-13 13:43:22.386  INFO 1277 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-13 13:43:22.682  INFO 1277 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-13 13:43:22.730  INFO 1277 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-13 13:43:22.744  INFO 1277 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-08-13 13:43:22.842  INFO 1277 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.4.Final}
+2019-08-13 13:43:22.984  INFO 1277 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-08-13 13:43:23.131  INFO 1277 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-13 13:43:23.772  INFO 1277 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-08-13 13:43:23.775  INFO 1277 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 13:43:24.392  WARN 1277 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-13 13:43:24.466  INFO 1277 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/devices/logs],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.sample(java.lang.String,jp.co.sb.sample.bean.Payload1Json) throws com.fasterxml.jackson.core.JsonProcessingException
+2019-08-13 13:43:24.468  INFO 1277 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/location-latestcell/v1/healthcheck],methods=[GET || POST]}" onto public org.springframework.http.ResponseEntity<?> jp.co.sb.sample.controller.SpringRestApiSampleController.healthCheck()
+2019-08-13 13:43:24.472  INFO 1277 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-08-13 13:43:24.473  INFO 1277 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-08-13 13:43:24.474  INFO 1277 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-08-13 13:43:24.477  INFO 1277 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-13 13:43:24.478  INFO 1277 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-13 13:43:24.646  INFO 1277 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-08-13 13:43:24.742  INFO 1277 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 13:43:24.961  INFO 1277 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20c0a64d: startup date [Tue Aug 13 13:43:20 JST 2019]; root of context hierarchy
+2019-08-13 13:43:25.025  INFO 1277 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 13:43:25.025  INFO 1277 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-13 13:43:25.418  INFO 1277 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-08-13 13:43:25.420  INFO 1277 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-13 13:43:25.428  INFO 1277 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-08-13 13:43:25.432  INFO 1277 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-08-13 13:43:25.433  INFO 1277 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-08-13 13:43:25.448  INFO 1277 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 5 custom documentation plugin(s)
+2019-08-13 13:43:25.477  INFO 1277 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 13:43:25.495  INFO 1277 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 13:43:25.567  INFO 1277 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 13:43:25.571  INFO 1277 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 13:43:25.576  INFO 1277 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-13 13:43:25.628  INFO 1277 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 48083 (http) with context path ''
+2019-08-13 13:43:25.636  INFO 1277 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Started SpringRestApiSampleApplication in 25.57 seconds (JVM running for 31.405)
+2019-08-13 13:43:39.297  INFO 1277 --- [http-nio-48083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-13 13:43:39.298  INFO 1277 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-13 13:43:39.328  INFO 1277 --- [http-nio-48083-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2019-08-13 13:43:39.344  INFO 1277 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : START ACS_API.
+2019-08-13 13:43:39.344  INFO 1277 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request URI:/location-latestcell/v1/devices/logs
+2019-08-13 13:43:39.344  INFO 1277 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:null
+2019-08-13 13:43:39.344  INFO 1277 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : request body:{"payload1": {"msn": "01234567890"}}
+2019-08-13 13:43:39.511 ERROR 1277 --- [http-nio-48083-exec-1] j.c.s.s.c.SpringRestApiSampleController  : AccessKey値が設定されてないです。
+2019-08-13 13:43:39.543  WARN 1277 --- [http-nio-48083-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jp.co.sb.sample.errorException.AccessKeyNullException]
+2019-08-13 13:43:39.549  INFO 1277 --- [http-nio-48083-exec-1] jp.co.sb.sample.filter.LoggingFilter     : END ACS_API. Processing time 00:00.205
+2019-08-13 13:44:04.464  INFO 1277 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : START ACS_API.
+2019-08-13 13:44:04.464  INFO 1277 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : request URI:/location-latestcell/v1/devices/logs
+2019-08-13 13:44:04.465  INFO 1277 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:null
+2019-08-13 13:44:04.465  INFO 1277 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : request body:{"payload1": {"msn": "01234567890"}}
+2019-08-13 13:44:07.598 ERROR 1277 --- [http-nio-48083-exec-2] j.c.s.s.c.SpringRestApiSampleController  : AccessKey値が設定されてないです。
+2019-08-13 13:44:33.779  WARN 1277 --- [http-nio-48083-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jp.co.sb.sample.errorException.AccessKeyNullException]
+2019-08-13 13:44:37.206  INFO 1277 --- [http-nio-48083-exec-2] jp.co.sb.sample.filter.LoggingFilter     : END ACS_API. Processing time 00:32.742
+2019-08-13 13:49:30.450  INFO 1277 --- [http-nio-48083-exec-3] jp.co.sb.sample.filter.LoggingFilter     : START ACS_API.
+2019-08-13 13:49:30.451  INFO 1277 --- [http-nio-48083-exec-3] jp.co.sb.sample.filter.LoggingFilter     : request URI:/location-latestcell/v1/devices/logs
+2019-08-13 13:49:30.451  INFO 1277 --- [http-nio-48083-exec-3] jp.co.sb.sample.filter.LoggingFilter     : request Header X-Access-Key:AAAAAA
+2019-08-13 13:49:30.452  INFO 1277 --- [http-nio-48083-exec-3] jp.co.sb.sample.filter.LoggingFilter     : request body:{"payload1": {"msn": "01234567890"}
+2019-08-13 13:49:30.466  WARN 1277 --- [http-nio-48083-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (PushbackInputStream); line: 1, column: 1]); nested exception is com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (PushbackInputStream); line: 1, column: 1])
+ at [Source: (PushbackInputStream); line: 1, column: 71]]
+2019-08-13 13:49:31.161  INFO 1277 --- [http-nio-48083-exec-3] jp.co.sb.sample.filter.LoggingFilter     : END ACS_API. Processing time 00:00.711
+2019-08-13 14:36:40.015  INFO 2856 --- [main] j.c.s.s.SpringRestApiSampleApplication   : Starting SpringRestApiSampleApplication on Fukui-MacBook-Pro.local with PID 2856 (/Users/SoftBank/ys_eclipse/springREST_API_Mysql/target/classes started by SoftBank in /Users/SoftBank/ys_eclipse/springREST_API_Mysql)
+2019-08-13 14:36:40.020  INFO 2856 --- [main] j.c.s.s.SpringRestApiSampleApplication   : No active profile set, falling back to default profiles: default
+2019-08-13 14:36:40.108  INFO 2856 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@119cbf96: startup date [Tue Aug 13 14:36:40 JST 2019]; root of context hierarchy
+2019-08-13 14:36:41.274  INFO 2856 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$84159bda] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 14:36:41.712  INFO 2856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 48083 (http)
+2019-08-13 14:36:41.734  INFO 2856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-13 14:36:41.734  INFO 2856 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-08-13 14:36:41.740  INFO 2856 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/SoftBank/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-08-13 14:36:41.851  INFO 2856 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-13 14:36:41.851  INFO 2856 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1743 ms
+2019-08-13 14:36:41.957  INFO 2856 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-08-13 14:36:41.961  INFO 2856 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-13 14:36:41.962  INFO 2856 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-13 14:36:41.962  INFO 2856 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-13 14:36:41.962  INFO 2856 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-13 14:36:41.962  INFO 2856 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'loggingFilter' to: [/*]
+2019-08-13 14:36:42.160  INFO 2856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-13 14:36:42.461  INFO 2856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-13 14:36:42.516  INFO 2856 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-08-13 14:36:42.531  INFO 2856 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-08-13 14:36:42.625  INFO 2856 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.4.Final}
+2019-08-13 14:36:42.769  INFO 2856 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-08-13 14:36:42.908  INFO 2856 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-13 14:36:43.635  INFO 2856 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-08-13 14:36:43.638  INFO 2856 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 14:36:43.670  WARN 2856 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springRestApiSampleController': Unsatisfied dependency expressed through field 'sampleService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'jp.co.sb.sample.service.SpringRestApiSampleService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-08-13 14:36:43.671  INFO 2856 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-13 14:36:43.672  INFO 2856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-13 14:36:43.681  INFO 2856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-13 14:36:43.684  INFO 2856 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-08-13 14:36:43.702  INFO 2856 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-13 14:36:43.854 ERROR 2856 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field sampleService in jp.co.sb.sample.controller.SpringRestApiSampleController required a bean of type 'jp.co.sb.sample.service.SpringRestApiSampleService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'jp.co.sb.sample.service.SpringRestApiSampleService' in your configuration.
+
